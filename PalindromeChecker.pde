@@ -22,7 +22,14 @@ public boolean palindrome(String word)
 public String reverse(String str)
 {
     String sNew = new String();
-    //your code here
+    for(int i = str.length(); i > 0; i --){
+      if(str.length() <= 1){
+        sNew = str.substring(0);
+      }
+      else{
+        sNew = sNew + str.charAt(i-1);
+      }
+    }
     return sNew;
 }
 
